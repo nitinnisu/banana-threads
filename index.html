@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banana Bliss T-Shirt</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./images/logo.webp" alt="Logo" />
+    </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Catalog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="icons">
+      <span>🔍</span>
+      <span>👤</span>
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <main class="product-section">
+    <div class="product-image">
+      <img src="./images/tshirt1.jpeg" alt="T-shirt" />
+    </div>
+    <div class="product-info">
+      <p class="store-name">MY STORE</p>
+      <h1>BANANA BLISS OVERSIZED T-SHIRT</h1>
+      <button class="size-chart-link" onclick="toggleModal()">View Size Chart</button>
+      <p class="price">Rs. 1,178.82</p>
+      <p class="tax-note">Taxes included. <a href="#">Shipping</a> calculated at checkout.</p>
+
+      <div class="size-selector">
+        <p>Size</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button class="active">L</button>
+          <button>XL</button>
+          <button>XXL</button>
+        </div>
+      </div>
+
+      <div class="quantity-selector">
+        <p>Quantity</p>
+        <div class="quantity-controls">
+          <button onclick="decreaseQty()">−</button>
+          <span id="quantity">1</span>
+          <button onclick="increaseQty()">+</button>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="add-to-cart">Add to cart</button>
+        <button class="buy-now">Buy it now</button>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="related-products">
+    <h2>Related Products</h2>
+    <div class="scroll-container">
+      <img src="./images/1.jpeg" alt="Product 1" />
+      <img src="./images/2.jpeg" alt="Product 2" />
+      <img src="./images/3.jpeg" alt="Product 3" />
+      <img src="./images/4.jpeg" alt="Product 4" />
+      <img src="./images/5.jpeg" alt="Product 5" />
+      <img src="./images/6.jpeg" alt="Product 6" />
+      <img src="./images/7.jpeg" alt="Product 7" />
+      <img src="./images/8.jpeg" alt="Product 8" />
+    </div>
+  </section>
+
+  <div id="sizeChartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal()">&times;</span>
+      <img src="./images/sizechart.jpeg" alt="Size Chart" />
+    </div>
+  </div>
+</body>
+</html>
